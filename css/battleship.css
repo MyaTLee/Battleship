@@ -1,0 +1,50 @@
+:root {
+    --perRow: 3;
+    /* is set to 3 for right now */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #ccc; 
+    /* gray color */
+}
+
+h1 {
+    text-align: center;
+}
+
+#gameboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    /* centers the gameboard */
+    background: rgb(107, 149, 212);
+}
+
+.tile {
+    width: calc(100%/var(--perRow));
+    height: calc(100%/var(--perRow));
+    border: 1px solid #fff;
+}
+
+.battleship {
+    background: green;
+}
+
+.shot {
+    background: orange;
+}
+
+.winPlayer1 {
+    background: red;
+}
+
+.winPlayer2 {
+    background: black;
+}
